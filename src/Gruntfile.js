@@ -18,12 +18,15 @@ grunt.initConfig({
         }
     },
     eslint: {
+        options: {
+            fix: true
+        },
         src: [
             "./scripts/**/*.js",
             "!node_modules/**/*.js"
         ]
     },
-        sass: {
+    sass: {
         options: {
             sourceMap: true
         },
@@ -32,7 +35,7 @@ grunt.initConfig({
                 "./styles/styles.css": "./styles/styles.scss"
             }
         }
-        },
+    },
     browserify: {
         options: {
             browserifyOptions: {

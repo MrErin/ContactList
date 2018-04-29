@@ -148,6 +148,6 @@ img{
     border: 1px solid $base-text-color;
 }
 
-:empty { 
-    background-color: $test-color;
+fieldset {
+    border-color: $base-text-color;
 }

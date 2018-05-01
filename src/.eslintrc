@@ -10,11 +10,9 @@
         "semi": 0,
         "quotes": [
             "error",
-            "single"
+            "double"
         ],
         "eqeqeq": 2,
         "no-trailing-spaces": 2,
-        "no-unused-vars": "off",
-        "no-mixed-spaces-and-tabs": "off"
     }
 }

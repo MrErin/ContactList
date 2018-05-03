@@ -13,26 +13,26 @@ Build four components:
 
 ## Currently Working On:
 
-  * Saves new contacts
+* Styles
 
 ## Remaining Features:
 
-* Contact form
-  * when submitted, adds a new contact to storage
-    * should import the ContactCollection component
-* Import ContactList and ContactForm into main.js (browserify)
 
 ## Stretch Goals:
-
-1. Bonus: Are there any other modules that could be made? Do any modules have more than one possible responsibility? Perhaps something that is a general utility function.
 
 
 ## Completed Features:
 
+* Contact form
+  * Clear entry form on submit
+  * when submitted, adds a new contact to storage
+    * should import the ContactCollection component
+* Import ContactList and ContactForm into main.js (browserify)
 * Contact list
   * displays all contacts by importing the collection of contact components
 * ContactCollection (database)
   * Loads existing contacts from storage
+  * Saves new contacts
 * Web app should show contact form at the top of the page and display the list of contacts underneath the form
 * Contact (entity, see data structure)
 

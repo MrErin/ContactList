@@ -1,24 +1,28 @@
-const database = require("./database.js")
-const componentFactory = require("./componentFactory.js")
-const appendinator = require("./appendinator.js")
+const databaseContacts = require('./databaseContacts')
+const componentFactory = require('./componentFactory')
+const appendinator = require('./appendinator')
+const determineSave = require('./databaseDetermineSave')
+const nuke = require('./nukeDom')
 
 
-const contentHook = document.querySelector("#contentHook")
+const contentHook = document.querySelector('#contentHook')
 const fragment = document.createDocumentFragment()
 
 const contactListDisplay = () => {
-	database.forEach(person => {
+	determineSave()
+	nuke('contentHook')
+	for (let person in databaseContacts.contacts) {
 		//section for the entire entry
-		const section = componentFactory("section", "", "card")
+		const section = componentFactory('section', '', 'card')
 		//individual elements
-		const pName = componentFactory("p", person.contactName, "contactName")
-		const pPhone = componentFactory("p", person.contactPhone, "contactPhone")
-		const pAddress = componentFactory("p", person.contactAddress, "contactAddress")
+		const pName = componentFactory('p', databaseContacts.contacts[person].personName, 'contactName')
+		const pPhone = componentFactory('p', databaseContacts.contacts[person].personPhone, 'contactPhone')
+		const pAddress = componentFactory('p', databaseContacts.contacts[person].personAddress, 'contactAddress')
 		appendinator(section, pName)
 		appendinator(section, pPhone)
 		appendinator(section, pAddress)
 		appendinator(fragment, section)
-	})
+	}
 	appendinator(contentHook, fragment)
 }
 

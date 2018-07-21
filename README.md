@@ -17,9 +17,7 @@ Build four components:
 
 ## Remaining Features:
 
-
 ## Stretch Goals:
-
 
 ## Completed Features:
 
@@ -36,7 +34,6 @@ Build four components:
 * Web app should show contact form at the top of the page and display the list of contacts underneath the form
 * Contact (entity, see data structure)
 
-
 ## Data Structure:
 
 * Contact
@@ -44,3 +41,11 @@ Build four components:
   * name
   * phone number
   * address
+
+## To run
+
+1. Clone the repo.
+2. From the command line, cd into the /src directory.
+3. Type ```grunt``` into the command line.
+4. Open a second terminal and cd into the /src directory.
+5. Type ```hs -o``` into the command line.

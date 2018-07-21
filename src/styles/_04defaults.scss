@@ -119,7 +119,7 @@ img{
     @include font-size($body-font-size);
     background: $base-background;
     @include rem-fallback(padding, 1, 2);
-    border: solid $base-text-color 5px;
+    border: solid $base-text-color 1px;
     text-decoration: none;
     text-align: center;
     margin: auto;
@@ -129,7 +129,7 @@ img{
     background: $base-text-color;
     text-decoration: none;
     color: $base-background;
-    border: solid $base-background 5px;
+    border: solid $base-background 1px;
 }
 
 .centered {

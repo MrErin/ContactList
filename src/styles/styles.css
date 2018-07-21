@@ -303,7 +303,7 @@ img {
   background: #0D0D0D;
   padding: 10px 20px;
   padding: 1rem 2rem;
-  border: solid #D6D6D6 5px;
+  border: solid #D6D6D6 1px;
   text-decoration: none;
   text-align: center;
   margin: auto; }
@@ -312,7 +312,7 @@ img {
   background: #D6D6D6;
   text-decoration: none;
   color: #0D0D0D;
-  border: solid #0D0D0D 5px; }
+  border: solid #0D0D0D 1px; }
 
 .centered {
   margin: 0 auto;
@@ -348,14 +348,6 @@ fieldset {
                                                     
 
 */
-#contentHook {
-  display: grid;
-  padding: 10px;
-  padding: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-gap: 10px;
-  grid-gap: 1rem; }
-
 /* # Media Queries
 ▄▄       ▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄       ▄▄▄▄▄▄▄▄▄▄▄  ▄         ▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄ 
 ▐░░▌     ▐░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌     ▐░░░░░░░░░░░▌▐░▌       ▐░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌
